@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+    <title>Validation Form</title>
+
+    <style>
+      body{
+        background-image:url("https://c4.wallpaperflare.com/wallpaper/871/1013/108/minimalism-red-abstract-digital-art-wallpaper-preview.jpg");
+        background-repeat: no-repeat;
+        background-size:cover;
+      }
+       
+
+        input {
+          width:20px;
+            margin-top: 10px;
+            font-size: 20px;
+            height: 40px;
+             border-radius: 5px;
+            border: 2px solid brown;
+        }
+        .new{
+          width:800px;
+        }
+
+        label {
+          font-size: 160%;
+          height: 30px;
+            width: 20%;
+            color: aliceblue;
+          }
+          select{
+            font-size: 20px;
+            height: 40px;
+            width: 800px;
+            border-radius: 6px;
+            margin: 22px 0px;
+            color:grey;
+            border: 2px  brown solid;
+
+          }
+        
+        #title{
+          font-size: 5vh;
+          padding-left:60vh;
+          justify-content: center;
+          position: relative;
+          text-align: center;
+          display:inline;
+          color: aliceblue;
+          text-decoration: underline;
+        }
+        #description{
+          font-size: 4vh;
+          padding-left:45vh;
+          justify-content: center;
+          position: relative;
+          text-align: center;
+          display:inline;
+          color: aliceblue;
+        }
+        textarea{
+          margin-top: 10px;
+          width:800px;
+          font-size:20px;
+
+        }
+		fieldset{
+		width:100px;
+    height:1500px;
+		 padding: auto;
+        margin: 13px auto;
+		background-color: darkslateblue;
+    opacity:0.9;
+    border: 2px solid black;
+    border-radius: 15px;
+		}
+     
+    #submit{
+      position: relative;
+      height: 70px;
+      width:400px;
+      text-align: center;
+      cursor:pointer;
+      background-color: green;
+      color: aliceblue;
+      border:2px solid black;
+      font-size: 40px;
+    }
+    
+
+    .btn{
+      padding-top: 5vh;
+      justify-content: center;
+      padding-left: 20vh;
+      
+    }
+    .btn:hover{
+      color:green;
+    }
+    </style>
+</head>
+
+<body>
+  <h1 id="title">MOUNTBLUE SURVEY FORM</h1><br><br>
+  <p id="description">Thank you for taking the time to help us improve the platform</p><br>
+
+<fieldset>
+    <div id="form_div">
+      <form id="survey-form">
+     <label for= "name" id="name-label"> Name:</label><br> 
+     <input class="new" type ="text" id="name" name= "name" placeholder="Enter your name" required /> <br> <br>
+     <label for= "email" id="email-label"> Email-Address:</label> <br> 
+     <input class="new"type ="email" id="email" name= "email" placeholder="Enter your email" required /><br><br> 
+     <label for= "id" id="number-label"> Age:</label> <br> 
+     <input class="new"type ="number" id="number" name= "number" placeholder="Enter your Age" min ="10"
+     max="90" required /> <br><br> 
+     <label for= "id" id="number-label"> Which option best describes your current role?</label> <br> 
+     <select id="dropdown" >
+       <option value="option1">Student</option><br> 
+       <option value="option2">Full-time Job</option>
+       <option value="option2">Full-time Learner</option>
+       <option value="option2">Prefer not to say</option>
+       <option value="option2">Other</option>
+       </select><br><br> 
+         <label>Select Your Gender </label><br> 
+         <input type="radio" id="radio1" name="radioGroup" value="radioOption1">
+         <label for="radio1">Woman</label><br> 
+         <input type="radio" id="radio2" name="radioGroup" value="radioOption2">
+         <label for="radio2">Man</label><br>
+         <input type="radio" id="radio2" name="radioGroup" value="radioOption2">
+         <label for="radio2">Transgender</label><br>
+         <input type="radio" id="radio2" name="radioGroup" value="radioOption2">
+         <label for="radio2">Prefer Not to say</label><br><br> 
+          <label>In Which Field You Want to Pursue Your Carrier</label><br> 
+         <input type="checkbox" id="checkbox1" name="checkboxGroup" value="checkboxOption1">
+         <label for="checkbox1">Full-Stack Developer</label><br>
+         <input type="checkbox" id="checkbox2" name="checkbox Group" value="checkboxOption2">
+         <label for="checkbox2">Java-Developer</label><br> 
+         <input type="checkbox" id="checkbox2" name="checkbox Group" value="checkboxOption2">
+         <label for="checkbox2">Javascript Developer</label><br>
+         <input type="checkbox" id="checkbox2" name="checkbox Group" value="checkboxOption2">
+         <label for="checkbox2">Frontend Developer</label><br><br>
+         
+       <label for="textarea">Describe Yourself :</label><br> 
+      <textarea id = "textarea" value="textarea"  rows="10" column="100" placeholder="Describe Yourself"></textarea><br><br>
+     <div class="btn"><input type = "submit" id="submit"></div>
+      </form>
+     
+    </div>
+</fieldset>
+</body>
+
+</html>
